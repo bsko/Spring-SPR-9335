@@ -7,7 +7,7 @@ import ru.bsc.mbs.jmba.protocol.back.ProtocolObject;
  */
 public interface BankProductsService {
   
-  ProtocolObject getBankProductsWithParam(BankProductsRequest request);
+  ProtocolObject getBankProductsWithParam(ProtocolObject request);
   
   ProtocolObject getBankProducts();
 }

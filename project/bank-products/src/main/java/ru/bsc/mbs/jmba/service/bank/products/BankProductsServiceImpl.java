@@ -7,7 +7,7 @@ import ru.bsc.mbs.jmba.protocol.validation.Validatable;
  */
 public class BankProductsServiceImpl implements BankProductsService, Validatable {
 
-  public ProtocolObject getBankProductsWithParam(BankProductsRequest request) {
+  public ProtocolObject getBankProductsWithParam(ProtocolObject request) {
     ProtocolObject response = new ProtocolObject() {};
     return response;
   }
