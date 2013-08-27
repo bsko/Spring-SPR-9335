@@ -1,21 +1,19 @@
 package ru.bsc.mbs.jmba.service.bank.products;
 
-import ru.bsc.mbs.jmba.protocol.back.ProtocolMarkupObject;
+import ru.bsc.mbs.jmba.protocol.back.ProtocolObject;
 import ru.bsc.mbs.jmba.protocol.validation.Validatable;
 /**
  * @author R. Malyshev
  */
-public class BankProductsServiceImpl implements BankProductsService, Validatable {//extends AbstractService
+public class BankProductsServiceImpl implements BankProductsService, Validatable {
 
-  public ProtocolMarkupObject getBankProductsWithParam(BankProductsRequest request) {
-    ProtocolMarkupObject response = new ProtocolMarkupObject();
-    response.setHeader(request.parameters);
+  public ProtocolObject getBankProductsWithParam(BankProductsRequest request) {
+    ProtocolObject response = new ProtocolObject() {};
     return response;
   }
 
-  public ProtocolMarkupObject getBankProducts() {
-    ProtocolMarkupObject response = new ProtocolMarkupObject();
-    response.setHeader("some test header");
+  public ProtocolObject getBankProducts() {
+    ProtocolObject response = new ProtocolObject() {};
     return response;
   }
 }
