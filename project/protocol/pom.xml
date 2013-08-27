@@ -19,11 +19,6 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.google.code.gson</groupId>
-      <artifactId>gson</artifactId>
-      <version>2.2.2</version>
-    </dependency>
-    <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-core</artifactId>
       <version>2.11.1</version>
@@ -44,50 +39,15 @@
       <version>3.2.3.RELEASE</version>
     </dependency>
     <dependency>
-      <groupId>org.apache.camel</groupId>
-      <artifactId>camel-jackson</artifactId>
-      <version>2.11.1</version>
+      <groupId>org.aspectj</groupId>
+      <artifactId>com.springsource.org.aspectj.weaver</artifactId>
+      <version>1.7.2.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.10</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.easymock</groupId>
-      <artifactId>easymock</artifactId>
-      <version>3.0</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.camel</groupId>
-      <artifactId>camel-test</artifactId>
-      <version>2.11.1</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-validator</artifactId>
-      <version>4.2.0.Final</version>
-      <scope>provided</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>javax.validation</groupId>
-          <artifactId>validation-api</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>javax.validation</groupId>
-      <artifactId>com.springsource.javax.validation</artifactId>
-      <version>1.0.0.GA</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.aspectj</groupId>
-      <artifactId>com.springsource.org.aspectj.weaver</artifactId>
-      <version>1.7.2.RELEASE</version>
     </dependency>
   </dependencies>
   
@@ -112,15 +72,13 @@
                         ru.bsc.alfa.protocol.back,ru.bsc.alfa.protocol.markup,
                         ru.bsc.alfa.protocol.elements.*,ru.bsc.alfa.protocol.validation,
                         javax.validation*,org.hibernate.validator,
-                      ru.bsc.mbs.jmba.protocol.back,
-                      ru.bsc.mbs.jmba.protocol.route,
-                      ru.bsc.mbs.jmba.protocol.view,
-                      ru.bsc.mbs.jmba.protocol.validation,
-                      ru.bsc.mbs.jmba.protocol.validation.aspect
+                        ru.bsc.mbs.jmba.protocol.back,
+                        ru.bsc.mbs.jmba.protocol.route,
+                        ru.bsc.mbs.jmba.protocol.view,
+                        ru.bsc.mbs.jmba.protocol.validation,
+                        ru.bsc.mbs.jmba.protocol.validation.aspect
                     </Export-Package>
-                    <Import-Package>
-                      !com.googlecode.jtype,!javax.persistence,!org.joda.time,!org.jsoup*,*
-                    </Import-Package>
+                    <Import-Package>*</Import-Package>
                   <Include-Resource>{maven-resources}</Include-Resource>
                   <Embed-Dependency>
                     artifactId=hibernate-validator|com.springsource.javax.validation
