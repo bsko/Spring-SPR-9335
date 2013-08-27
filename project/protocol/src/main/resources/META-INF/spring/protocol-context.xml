@@ -3,40 +3,4 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-  <!-- <bean id="operationMapping" class="ru.bsc.alfa.protocol.back.OperationMapping" init-method="init">
-    <property name="scanPackages">
-      <list>
-        <value>ru.bsc.alfa.protocol.elements</value>
-      </list>
-    </property>
-  </bean>
-
-  <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-    <property name="location" value="classpath:protocol.properties"/>
-    <property name="ignoreUnresolvablePlaceholders" value="true"/>
-  </bean>
-  
-  <bean id="requestParser" class="ru.bsc.alfa.protocol.transformer.RequestParser">
-    <property name="jmbpSerializer" ref="jmbpSerializer" />
-    <property name="operationMapping" ref="operationMapping" />
-  </bean>
-
-  <bean id="jmbpResponsePublisher" class="ru.bsc.alfa.protocol.transformer.ResponsePublisher">
-    <property name="jmbpSerializer" ref="jmbpSerializer" />
-  </bean>
-
-  <bean id="jmbpSerializer" class="ru.bsc.alfa.protocol.transformer.JMBPSerializer" init-method="init" depends-on="settingsManager">
-    <property name="version" value="#{ T(ru.bsc.alfa.config.settings.SettingsManager).getSettings().getProperty('jmb.protocol.version') }" />
-    <property name="dateFormat" value="#{ T(ru.bsc.alfa.config.settings.SettingsManager).getSettings().getProperty('jmb.protocol.date.format') }" />
-  </bean>
-
-  <bean id="jmbaMessageInterpolator" class="ru.bsc.alfa.protocol.validation.service.JmbaSimpleMessageInterpolator"/>
-  <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
-    <property name="messageInterpolator" ref="jmbaMessageInterpolator"/>
-  </bean>
-
-  <bean id="validationService" class="ru.bsc.alfa.protocol.validation.service.ValidationServiceImpl">
-    <property name="validator" ref="validator"/>
-  </bean> 
-  -->
 </beans>
