@@ -1,9 +1,8 @@
 package ru.bsc.alfa.protocol.transformer;
 
-import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
 
-public class RequestParserTest extends CamelTestSupport {
+public class RequestParserTest {
 
   public void init(){
   }
