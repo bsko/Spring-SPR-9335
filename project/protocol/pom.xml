@@ -68,22 +68,11 @@
                     <Bundle-Name>${project.name} ${project.version}</Bundle-Name>
                     <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
                     <Export-Package>
-                        ru.bsc.alfa.protocol.elements.composite,ru.bsc.alfa.protocol.transformer,
-                        ru.bsc.alfa.protocol.back,ru.bsc.alfa.protocol.markup,
-                        ru.bsc.alfa.protocol.elements.*,ru.bsc.alfa.protocol.validation,
-                        javax.validation*,org.hibernate.validator,
-                        ru.bsc.mbs.jmba.protocol.back,
                         ru.bsc.mbs.jmba.protocol.route,
-                        ru.bsc.mbs.jmba.protocol.view,
                         ru.bsc.mbs.jmba.protocol.validation,
                         ru.bsc.mbs.jmba.protocol.validation.aspect
                     </Export-Package>
                     <Import-Package>*</Import-Package>
-                  <Include-Resource>{maven-resources}</Include-Resource>
-                  <Embed-Dependency>
-                    artifactId=hibernate-validator|com.springsource.javax.validation
-                  </Embed-Dependency>
-                  <!--<Embed-Transitive>true</Embed-Transitive>-->
                 </instructions>
             </configuration>
         </plugin>
