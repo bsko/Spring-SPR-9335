@@ -2,16 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <parent>
-    <groupId>ru.bsc.alfa.jmb</groupId>
-    <artifactId>service</artifactId>
-    <version>1.0.0</version>
-  </parent>
   <modelVersion>4.0.0</modelVersion>
-
+  <parent>
+    <groupId>ru.bsc.alfa.jmb</groupId>  
+    <version>1.0.0</version>
+    <artifactId>project</artifactId>
+  </parent>
+  
   <artifactId>bank-products</artifactId>
 
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
 
   <packaging>bundle</packaging>
   <name>Bank products</name>
@@ -22,69 +22,28 @@
       <groupId>${project.groupId}</groupId>
       <artifactId>protocol</artifactId>
       <type>bundle</type>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>config</artifactId>
-      <type>bundle</type>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>alfa-ws</artifactId>
-      <type>bundle</type>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>alfa-ws-adapter</artifactId>
-      <type>bundle</type>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>base</artifactId>
-      <type>bundle</type>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>system-services</artifactId>
-      <type>bundle</type>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>events</artifactId>
-      <type>bundle</type>
-    </dependency>
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>domain</artifactId>
-      <type>bundle</type>
-    </dependency>
-
-
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>org.springframework.beans</artifactId>
+      <version>3.2.3.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>org.springframework.core</artifactId>
+      <version>3.2.3.RELEASE</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-core</artifactId>
+      <version>2.11.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-spring</artifactId>
+      <version>2.11.1</version>
     </dependency>
-    <dependency>
-      <groupId>org.apache.camel</groupId>
-      <artifactId>camel-servlet</artifactId>
-    </dependency>
-
   </dependencies>
 
   <build>
@@ -109,6 +68,4 @@
       </plugin>
     </plugins>
   </build>
-
-
 </project>

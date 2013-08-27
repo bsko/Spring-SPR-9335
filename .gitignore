@@ -15,6 +15,11 @@ local.properties
 .classpath
 .settings/
 .loadpath
+project/protocol/.settings
+project/protocol/target
+project/bank-products/.settings
+project/bank-products/target
+
 
 # External tool builders
 .externalToolBuilders/
