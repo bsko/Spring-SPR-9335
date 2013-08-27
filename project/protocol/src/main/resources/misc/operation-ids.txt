@@ -1,0 +1,34 @@
+1) BumpTransfer
+
+ - BumpTransfer:GetAccountList.Debit - BumpTransfer:AccountList.Debit
+ - BumpTransfer:GetAccountList.Credit - BumpTransfer:AccountList.Credit
+ - BumpTransfer:SetAccount.Credit - BumpTransfer:CreditId
+ - BumpTransfer:InitTransfer - BumpTransfer:VerifyTransfer
+ - BumpTransfer:Confirm - BumpTransfer:TransferResult
+
+2) PreapprovedOffers
+
+ - PreapprovedOffers:GetOffersList - PreapprovedOffers:OffersList
+ - PreapprovedOffers:AddCustomerOfferResponse - PreapprovedOffers:AddCustomerOfferResponseResult
+
+3) CustomerGoals
+
+ - CustomerGoals:GetGoalsList - CustomerGoals:GoalsList
+ - CustomerGoals:CreateGoalInitialStep - CustomerGoals:CreateGoalInitialStepResult
+ - CustomerGoals:CreateGoalConfirmationStep - CustomerGoals:CreateGoalConfirmationStepResult
+ - CustomerGoals:CreateGoalResultStep - CustomerGoals:CreateGoalResultStepInfo
+ - CustomerGoals:ViewGoal - CustomerGoals:ViewGoalResult
+ - CustomerGoals:EditGoal - CustomerGoals:EditGoalResult
+ - CustomerGoals:SaveGoal - CustomerGoals:SaveGoalResult
+
+ - CustomerGoals:ReplenishGetInitialScreen - CustomerGoals:ReplenishInitialScreen
+ - CustomerGoals:ReplenishRegisterTransfer - CustomerGoals:ReplenishRegisterTransferResult
+ - CustomerGoals:ReplenishConfirm - CustomerGoals:ReplenishConfirmResult
+
+ - CustomerGoals:WithdrawGetInitialScreen - CustomerGoals:WithdrawInitialScreen
+ - CustomerGoals:WithdrawRegisterTransfer - CustomerGoals:WithdrawRegisterTransferResult
+ - CustomerGoals:WithdrawConfirm - CustomerGoals:WithdrawConfirmResult
+
+ - CustomerGoals:DeleteGoal - CustomerGoals:ChooseDestinationAccount
+                            - CustomerGoals:VerifyCustomerGoalDeletion
+ - CustomerGoals:DeleteGoalConfirmation - CustomerGoals:DeleteGoalConfirmationResult
